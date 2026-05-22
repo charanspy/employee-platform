@@ -138,6 +138,7 @@ autoscaling:
 replicaCount: 5
 autoscaling:
   maxReplicas: 10
+# resource.limits.memory not specified = inherited from base
 ```
 
 **Benefit:**
@@ -634,5 +635,5 @@ Example:
 
 ---
 
-**Last Updated:** May 2026
+**Last Updated:** May 2026  
 **Version:** 1.0
