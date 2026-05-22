@@ -1,0 +1,5 @@
+env:
+  ENV: production
+replicaCount: 5
+autoscaling:
+  maxReplicas: 10

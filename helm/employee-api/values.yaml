@@ -1,0 +1,34 @@
+namespace: dev
+
+image:
+  repository: your-dockerhub/employee-api
+  tag: v1
+
+replicaCount: 2
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+env:
+  ENV: dev
+  TEAM: platform
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "256Mi"
+  requests:
+    cpu: "200m"
+    memory: "128Mi"
+
+ingress:
+  enabled: true
+  host: employee.local
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  cpuUtilization: 70

@@ -1,0 +1,4 @@
+apiVersion: v2
+name: employee-api
+description: Golden Path Helm Chart for Employee API
+version: 0.1.0
