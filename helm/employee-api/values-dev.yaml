@@ -1,2 +1,16 @@
 env:
   ENV: dev
+
+image:
+  repository: employee-api
+  tag: v1
+  pullPolicy: IfNotPresent
+
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  hosts:
+    - host: employee.local
+      paths:
+        - path: /
+          pathType: Prefix

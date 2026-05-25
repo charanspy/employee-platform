@@ -6,12 +6,12 @@ A comprehensive Platform Engineering implementation demonstrating standardized K
 
 This project implements a reusable **Golden Path** deployment framework for an internal Employee Management API, addressing key Platform Engineering challenges:
 
-- ✅ Eliminated duplicated Kubernetes YAML files through Helm templating
-- ✅ Standardized deployment patterns across development teams
-- ✅ Environment-agnostic configuration management
-- ✅ Automated scaling and operational readiness
-- ✅ Simplified developer onboarding experience
-- ✅ Production-grade deployment standards
+-  Eliminated duplicated Kubernetes YAML files through Helm templating
+-  Standardized deployment patterns across development teams
+-  Environment-agnostic configuration management
+-  Automated scaling and operational readiness
+-  Simplified developer onboarding experience
+-  Production-grade deployment standards
 
 ## 🏗️ Architecture Overview
 
@@ -383,12 +383,12 @@ kubectl get events -n dev --field-selector reason=SuccessfulRescale
 
 ## 🔒 Security Features
 
-- ✅ Non-root container execution
-- ✅ Read-only root filesystem
-- ✅ Resource limits enforcement
-- ✅ Network isolation via ClusterIP
-- ✅ ConfigMap-based configuration
-- ✅ ServiceAccount RBAC isolation
+-  Non-root container execution
+-  Read-only root filesystem
+-  Resource limits enforcement
+-  Network isolation via ClusterIP
+-  ConfigMap-based configuration
+-  ServiceAccount RBAC isolation
 
 ## 📚 Documentation
 
@@ -446,16 +446,16 @@ This implementation demonstrates:
 
 ## 📚 Best Practices Implemented
 
-- ✅ Infrastructure as Code (IaC)
-- ✅ Configuration as Code with values files
-- ✅ DRY (Don't Repeat Yourself) through templating
-- ✅ Environment parity (same templates, different config)
-- ✅ Declarative deployments
-- ✅ Health monitoring and probes
-- ✅ Resource governance with limits
-- ✅ Automatic scaling based on metrics
-- ✅ Zero-downtime rolling updates
-- ✅ Container security best practices
+-  Infrastructure as Code (IaC)
+-  Configuration as Code with values files
+-  DRY (Don't Repeat Yourself) through templating
+-  Environment parity (same templates, different config)
+-  Declarative deployments
+-  Health monitoring and probes
+-  Resource governance with limits
+-  Automatic scaling based on metrics
+-  Zero-downtime rolling updates
+-  Container security best practices
 
 ## 🔄 CI/CD Ready
 

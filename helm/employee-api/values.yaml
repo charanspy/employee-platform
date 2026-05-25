@@ -1,8 +1,9 @@
 namespace: dev
 
 image:
-  repository: your-dockerhub/employee-api
+  repository: employee-api
   tag: v1
+  pullPolicy: Never
 
 replicaCount: 2
 

@@ -634,6 +634,22 @@ Example:
 4. Deploy same way as employee-api
 
 ---
+## Ingress Routing Architecture
 
-**Last Updated:** May 2026  
-**Version:** 1.0
+### Hostname-Based Routing
+- Single Ingress object routes to service
+- Hostname: employee.local (configurable)
+- Supports multiple paths for different endpoints
+
+### Path-Based Routing (Enhanced)
+- `/` → Main API endpoints
+- `/health` → Health check (exact match)
+- Future: `/api/v1/*` → Versioned endpoints
+
+### Service Integration
+- Ingress → Service (ClusterIP) → Pods
+- Load balancing via Service
+- DNS discovery inside cluster
+
+### Traffic Flow Diagram
+[Add ASCII diagram showing traffic flow]
